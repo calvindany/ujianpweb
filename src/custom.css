@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar {
+    height: 80px;
+    /* background-color: blue; */
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+.logoug {
+    width: auto;
+    height: 90%;
+    margin-right: 20px;
+}
+
+.custom-padding {
+    padding-left: 10%;
+}
+
+.title {
+    text-align: center;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.long-data{
+    width: 400px;
+}
+
+.medium-data{
+    width: 200px;
+}
+
+.short-data{
+    width: 100px;
+}

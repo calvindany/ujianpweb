@@ -1,12 +1,12 @@
 import './App.css';
-import Header from './component/Header';
-import Table from './component/Table';
+import Header from './component/Header/Header';
+import Body from './component/Body/Body';
 
 function App() {
   return (
-    <div className="App w-75">
+    <div>
       <Header/>
-      <Table />
+      <Body/>
     </div>
   );
 }

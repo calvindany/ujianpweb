@@ -1,6 +1,6 @@
 import React from "react";
 
-const AbsenItem = ({mhs, setRefresh}) => {
+const TableItem = ({mhs, setRefresh}) => {
 
     const updateItem = () => {
         fetch("http://localhost:8000/mahasiswa/" + mhs.id, {
