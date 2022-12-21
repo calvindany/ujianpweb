@@ -31,13 +31,23 @@ table, tr, th, td {
     border-collapse: collapse;
 }
 
+th, td{
+    vertical-align: middle;
+}
+
+.action {
+    display: flex;
+    border: 0;
+    justify-content: space-evenly;
+}
+
 .center{
     display: flex;
     justify-content: center;
 }
 
 .long-data{
-    width: 400px;
+    width: 300px;
 }
 
 .medium-data{

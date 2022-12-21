@@ -1,14 +1,20 @@
 {
-    "mahasiswa" : [
-        {
-            "nama" : "Pensil",
-            "npm" : "20",
-            "jamabsen" : 2000
-        },
-        {
-            "nama" : "Penggaris",
-            "npm" : "20",
-            "jamabsen" : 5000
-        }
-    ]
+  "absensi": [
+    {
+      "id": 2,
+      "nama": "Lutpi",
+      "npm": "123123",
+      "pertemuan": "1",
+      "keterangan": "Hadir",
+      "jam": "2"
+    },
+    {
+      "id": 3,
+      "nama": "Fajar Rizqy",
+      "npm": "50420303",
+      "pertemuan": "1",
+      "keterangan": "Hadir",
+      "jam": "2"
+    }
+  ]
 }
