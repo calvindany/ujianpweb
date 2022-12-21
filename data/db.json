@@ -1,0 +1,14 @@
+{
+    "mahasiswa" : [
+        {
+            "nama" : "Pensil",
+            "npm" : "20",
+            "jamabsen" : 2000
+        },
+        {
+            "nama" : "Penggaris",
+            "npm" : "20",
+            "jamabsen" : 5000
+        }
+    ]
+}
