@@ -1,11 +1,11 @@
 {
   "absensi": [
     {
-      "id": 2,
-      "nama": "Lutpi",
-      "npm": "123123",
+      "id": 3,
+      "nama": "Fajar Rizqy",
+      "npm": "50420303",
       "pertemuan": "1",
-      "keterangan": "Hadir",
+      "keterangan": "Izin",
       "jam": "2"
     },
     {
@@ -13,7 +13,31 @@
       "nama": "Fajar Rizqy",
       "npm": "50420303",
       "pertemuan": "1",
-      "keterangan": "Hadir",
+      "keterangan": "Izin",
+      "jam": "2"
+    },
+    {
+      "id": 3,
+      "nama": "Fajar Rizqy",
+      "npm": "50420303",
+      "pertemuan": "1",
+      "keterangan": "Izin",
+      "jam": "2"
+    },
+    {
+      "id": 3,
+      "nama": "Fajar Rizqy",
+      "npm": "50420303",
+      "pertemuan": "1",
+      "keterangan": "Izin",
+      "jam": "2"
+    },
+    {
+      "id": 3,
+      "nama": "Fajar Rizqy",
+      "npm": "50420303",
+      "pertemuan": "1",
+      "keterangan": "Izin",
       "jam": "2"
     }
   ]

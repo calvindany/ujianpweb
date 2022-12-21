@@ -8,7 +8,7 @@ export default function TableHeader(){
             <th className="short-data">Pertemuan ke-</th>
             <th className="medium-data">Keterangan</th>
             <th className="medium-data">Jam Absen</th>
-            <th className="medium-data">Action</th>
+            <th className="medium-data text-center">Action</th>
         </tr>
     )
 }

@@ -1,6 +1,7 @@
-import React from "react";
+import React from "react";;
 
 const TableData = ({ mhs, setRefresh }) => {
+
     const updateData = () => {
         fetch("http://localhost:8000/mahasiswa/" + mhs.id, {
             method: "PUT",
@@ -34,7 +35,8 @@ const TableData = ({ mhs, setRefresh }) => {
             console.log(err);
         })
     }
-    
+
+    const present = new Date();
 
     return (
         <tr>
@@ -42,10 +44,12 @@ const TableData = ({ mhs, setRefresh }) => {
             <td>{mhs.npm}</td>
             <td>{mhs.pertemuan}</td>
             <td>{mhs.keterangan}</td>
-            <td>{mhs.jam}</td>
+            <td>{
+                present.getDay() + '/' + present.getMonth() + '/' + present.getFullYear() + " " + 
+                present.getHours() + ":" + present.getMinutes()}</td>
             <td className="action">
                 <span onClick={deleteData}>Hapus</span>
-                <div>Edit</div>
+                <button>acs</button>
             </td>
         </tr>
     )

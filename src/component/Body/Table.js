@@ -27,7 +27,7 @@ const Table = () => {
     console.log(mhs)
     return (
         <div className="center">
-            <table className="custom-padding">
+            <table className="custom-padding table table-striped">
                 <thead>
                     <TableHeader></TableHeader>
                 </thead>

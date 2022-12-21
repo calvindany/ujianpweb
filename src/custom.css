@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 body {
     padding: 0;
     margin: 0;
 }
 
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 .navbar {
     height: 80px;
@@ -18,26 +24,19 @@ body {
     margin-right: 20px;
 }
 
-.custom-padding {
+.custom-padding{
     padding-left: 10%;
+    padding-right: 10%;
 }
 
 .title {
     text-align: center;
-}
-
-table, tr, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th, td{
-    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .action {
     display: flex;
-    border: 0;
+    /* border: 0; */
     justify-content: space-evenly;
 }
 
@@ -56,4 +55,34 @@ th, td{
 
 .short-data{
     width: 100px;
+}
+
+.modal{
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 200px;
+    width: 500px;
+    height: 550px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.close-button{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex !important;
+    justify-content: end !important;
 }
