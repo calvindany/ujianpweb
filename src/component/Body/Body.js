@@ -8,7 +8,6 @@ const Body = () => {
     return (
         <div className="content">
             <Title />
-            <Button />
             <Table />
         </div>
     )

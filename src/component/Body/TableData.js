@@ -1,23 +1,7 @@
-import React from "react";;
+import React from "react";import Button from "./Button";
+;
 
-const TableData = ({ mhs, setRefresh }) => {
-
-    const updateData = () => {
-        fetch("http://localhost:8000/mahasiswa/" + mhs.id, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(mhs)
-        })
-            .then(() => {
-                console.log('Todo Updated.')
-                setRefresh(true)
-            })
-            .catch(err => {
-                console.log(err);
-            })
-    }
+const TableData = ({ mhs, forceRefresh, setRefresh }) => {
 
     const deleteData = () => {
         fetch("http://localhost:8000/absensi/" + mhs.id, {
@@ -29,27 +13,24 @@ const TableData = ({ mhs, setRefresh }) => {
         })
         .then(() => {
             console.log('Todo Updated.')
-            setRefresh(true)
+            forceRefresh();
         })
         .catch(err => {
             console.log(err);
         })
     }
 
-    const present = new Date();
 
     return (
-        <tr>
+        <tr className="text-center">
             <td>{mhs.nama}</td>
             <td>{mhs.npm}</td>
-            <td>{mhs.pertemuan}</td>
+            <td >{mhs.pertemuan}</td>
             <td>{mhs.keterangan}</td>
-            <td>{
-                present.getDay() + '/' + present.getMonth() + '/' + present.getFullYear() + " " + 
-                present.getHours() + ":" + present.getMinutes()}</td>
+            <td>{mhs.jam}</td>
             <td className="action">
-                <span onClick={deleteData}>Hapus</span>
-                <button>acs</button>
+                <Button mhs={mhs} forceRefresh={forceRefresh} mode='Edit'></Button>
+                <button className="btn btn-danger" onClick={deleteData} >Hapus</button>
             </td>
         </tr>
     )
