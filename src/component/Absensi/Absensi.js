@@ -2,9 +2,10 @@ import { useState, useEffect, useReducer } from "react";
 import TableData from "./TableData";
 import TableHeader from "./TableHeader";
 import Button from "./Button";
+import Title from "./Title"
 
 
-const Table = () => {
+const Absensi = () => {
     const [mhs, setMhs] = useState([]);
     const [update, forceUpdate] = useReducer(x => x + 1, 0);
 
@@ -15,9 +16,11 @@ const Table = () => {
                 return res.json();
             })
             .then((data) => {
-                console.log(data);
-                // ketika Rest API sukses, simpan data dari response ke dalam state lokal
-                return setMhs(data);
+                const sortedData = [...data].sort((a, b) =>
+                    a.pertemuan < b.pertemuan ? -1 : 1
+                );
+
+                return setMhs(sortedData);
             })
             .catch((err) => {
                 if (err.name === "AbortError") {
@@ -30,10 +33,11 @@ const Table = () => {
 
     console.log(mhs)
     return (
-        <div>
+        <div className="custom-padding">
+            <Title />
             <Button forceRefresh={() => { forceUpdate() }}/>
             <div className="center">
-                <table className="custom-padding table table-striped">
+                <table className=" table table-striped">
                     <thead>
                         <TableHeader></TableHeader>
                     </thead>
@@ -51,4 +55,4 @@ const Table = () => {
     );
 };
 
-export default Table;
+export default Absensi;

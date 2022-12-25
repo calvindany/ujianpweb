@@ -1,13 +1,21 @@
 import './App.css';
-import Header from './component/Header/Header';
-import Body from './component/Body/Body';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Absensi from './component/Absensi/Absensi';
+import Tugas from './component/Tugas/Tugas';
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Body/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <Route index />
+          <Route path="absensi" element={<Absensi />}/>
+          <Route path="tugas" element={<Tugas />}  />
+          <Route path="*"  />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

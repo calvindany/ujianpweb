@@ -52,7 +52,6 @@ const FormInput = props => {
             },
             body: JSON.stringify(newAbsen)
         }).then(() => {
-
             // ketika sukses menambah data, reset form dengan mengeset state title menjadi empty string 
             setMhs('')
             setNpm('')

@@ -22,12 +22,12 @@ const TableData = ({ mhs, forceRefresh, setRefresh }) => {
 
 
     return (
-        <tr className="text-center">
-            <td>{mhs.nama}</td>
-            <td>{mhs.npm}</td>
-            <td >{mhs.pertemuan}</td>
-            <td>{mhs.keterangan}</td>
-            <td>{mhs.jam}</td>
+        <tr >
+            <td className="text-center">{mhs.nama}</td>
+            <td className="text-center">{mhs.npm}</td>
+            <td className="text-center">{mhs.pertemuan}</td>
+            <td className="text-center">{mhs.keterangan}</td>
+            <td className="text-center">{mhs.jam}</td>
             <td className="action">
                 <Button mhs={mhs} forceRefresh={forceRefresh} mode='Edit'></Button>
                 <button className="btn btn-danger" onClick={deleteData} >Hapus</button>

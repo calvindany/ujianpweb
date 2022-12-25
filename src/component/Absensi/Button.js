@@ -1,5 +1,5 @@
-import FormInput from '../Modal/FormAdd';
-import FormEdit from '../Modal/FormEdit';
+import FormInput from './Form/FormAdd';
+import FormEdit from './Form/FormEdit';
 import {React, useState} from 'react';
 
 const Button = (props) => {

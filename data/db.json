@@ -3,8 +3,8 @@
     {
       "nama": "Calvin Danyalson",
       "npm": "50420303",
-      "pertemuan": "5",
-      "keterangan": "Hadir",
+      "pertemuan": "4",
+      "keterangan": "Izin",
       "jam": "4/11/2022 10:48",
       "id": 7
     },
@@ -47,6 +47,68 @@
       "keterangan": "Absen",
       "jam": "5/11/2022 15:20",
       "id": 13
+    }
+  ],
+  "tugas": [
+    {
+      "id": 1,
+      "judul": "Latihan HTML 5",
+      "jenis": "Individu",
+      "keterangan": "Membuat website sederhana dengan menggunakan HTML 5"
+    },
+    {
+      "judul": "Latihan CSS",
+      "keterangan": "Menambahkan CSS pada HTML 5 yang sudah dibuat",
+      "jenis": "Individu",
+      "id": 2
+    },
+    {
+      "judul": "Latihan Javascript",
+      "keterangan": "Menambahkan animasi menggunakan Javascript",
+      "jenis": "Individu",
+      "id": 3
+    },
+    {
+      "judul": "Latihan Golang",
+      "keterangan": "Membuat CRUD menggunakan golang",
+      "jenis": "Individu",
+      "id": 4
+    },
+    {
+      "judul": "Latihan Web Statik",
+      "jenis": "Kelompok",
+      "keterangan": "Membuat website dasar tanpa menggunakan database. (Hanya menggunakan HTML, CSS. JS)",
+      "id": 5
+    },
+    {
+      "judul": "Latihan CRUD Node JS",
+      "jenis": "Kelompok",
+      "keterangan": "Membuat API dengan memanfaatkan framework Express JS dan dengan database NoSQL",
+      "id": 6
+    },
+    {
+      "judul": "Test",
+      "jenis": "Individu",
+      "keterangan": "a",
+      "id": 7
+    },
+    {
+      "judul": "sq",
+      "jenis": "Individu",
+      "keterangan": "q",
+      "id": 8
+    },
+    {
+      "judul": "",
+      "jenis": "Individu",
+      "keterangan": "",
+      "id": 9
+    },
+    {
+      "judul": "",
+      "jenis": "Individu",
+      "keterangan": "",
+      "id": 10
     }
   ]
 }
