@@ -14,7 +14,7 @@ const Tugas = () => {
                 return res.json();
             })
             .then((data) => {
-                console.log(data);
+                // console.log(data);
                 // ketika Rest API sukses, simpan data dari response ke dalam state lokal
                 setTugas(data);
             })
@@ -32,7 +32,7 @@ const Tugas = () => {
             <Title />
             <Button forceRefresh={ () => forceUpdate() }></Button>
             {tugas.map( (datatugas) => {
-                return <CardData tugas={datatugas} forceRefresh={ () => forceUpdate() }/>
+                return <CardData tugas={datatugas} key={datatugas.id} forceRefresh={() => forceUpdate()}/>
             })}
         </div>
     );

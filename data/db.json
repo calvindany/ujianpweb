@@ -85,30 +85,6 @@
       "jenis": "Kelompok",
       "keterangan": "Membuat API dengan memanfaatkan framework Express JS dan dengan database NoSQL",
       "id": 6
-    },
-    {
-      "judul": "Test",
-      "jenis": "Individu",
-      "keterangan": "a",
-      "id": 7
-    },
-    {
-      "judul": "sq",
-      "jenis": "Individu",
-      "keterangan": "q",
-      "id": 8
-    },
-    {
-      "judul": "",
-      "jenis": "Individu",
-      "keterangan": "",
-      "id": 9
-    },
-    {
-      "judul": "",
-      "jenis": "Individu",
-      "keterangan": "",
-      "id": 10
     }
   ]
 }

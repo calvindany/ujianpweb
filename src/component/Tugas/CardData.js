@@ -12,6 +12,7 @@ const CardData = ({ tugas, forceRefresh}) => {
             body: JSON.stringify(tugas)
         })
             .then(() => {
+                forceRefresh();
                 console.log('Data dihapus')
                 // forceRefresh();
             })
