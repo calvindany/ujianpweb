@@ -39,6 +39,7 @@ const Notes = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

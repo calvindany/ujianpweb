@@ -10,7 +10,7 @@ const Home = () => {
             <Title text={'Tools yang Dibutuhkan'} jenis={"Subtitle"}></Title>
             <DisplayImg></DisplayImg>
 
-            <Title text={'Notes'}></Title>
+            <Title text={'Notes'} ></Title>
             <DropdownNotes></DropdownNotes>
         </div>
     )

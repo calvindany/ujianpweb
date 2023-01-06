@@ -31,7 +31,6 @@ const Absensi = () => {
 
     if (mhs.length === 0) return <p>Fetching data...</p>
 
-    console.log(mhs)
     return (
         <div className="custom-padding">
             <Title />

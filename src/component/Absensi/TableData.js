@@ -1,7 +1,7 @@
 import React from "react";import Button from "./Button";
 ;
 
-const TableData = ({ mhs, forceRefresh, setRefresh }) => {
+const TableData = ({ mhs, forceRefresh }) => {
 
     const deleteData = () => {
         fetch("http://localhost:8000/absensi/" + mhs.id, {
@@ -12,7 +12,7 @@ const TableData = ({ mhs, forceRefresh, setRefresh }) => {
             body: JSON.stringify(mhs)
         })
         .then(() => {
-            console.log('Todo Updated.')
+            console.log('Table Updated.')
             forceRefresh();
         })
         .catch(err => {
@@ -30,7 +30,7 @@ const TableData = ({ mhs, forceRefresh, setRefresh }) => {
             <td className="text-center">{mhs.jam}</td>
             <td className="action">
                 <Button mhs={mhs} forceRefresh={forceRefresh} mode='Edit'></Button>
-                <button className="btn btn-danger" onClick={deleteData} >Hapus</button>
+                <button className="btn btn-danger" onClick={deleteData}>Hapus</button>
             </td>
         </tr>
     )

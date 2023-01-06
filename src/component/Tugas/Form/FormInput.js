@@ -9,7 +9,6 @@ const FormInput = props => {
         return null
     }
 
-    // fungsi untuk menambah data todo melalui API ketika tombol "Add" di klik
     const addTugas = () => {
 
         const getRadio = {
@@ -38,7 +37,6 @@ const FormInput = props => {
             },
             body: JSON.stringify(newTugas)
         }).then(() => {
-            // ketika sukses menambah data, reset form dengan mengeset state title menjadi empty string 
             setJudul('')
             setKeterangan('')
             props.forceRefresh();
