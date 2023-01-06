@@ -9,7 +9,6 @@ const FormInput = props => {
         return null
     }
 
-    // fungsi untuk menambah data todo melalui API ketika tombol "Add" di klik
     const editTugas = () => {
         const getRadio = {
             individu: document.getElementById('individu').checked,
